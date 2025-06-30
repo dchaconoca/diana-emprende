@@ -1,0 +1,114 @@
+/* =============================================================================
+   ARCHIVO: styles.css
+   DESCRIPCIÓN: Estilos principales del sitio web
+   AUTOR: Diana Chacón Ocariz
+   FECHA: 2025
+   ============================================================================= */
+
+    /* Define custom color palette and font based on design rules */
+    :root {
+        --color-title: #3c1e99;
+        --color-subtitle: #990099;
+        --color-text: #747474;
+        --color-icon: #000000;
+        --color-background: #ffffff;
+    }
+
+    /* Apply the primary font to the body */
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--color-background);
+        background-image: linear-gradient(to right,rgba(240, 240, 240, 0.7), rgba(255, 255, 255, 0.8))
+        /* background-position: right;
+        background-attachment: fixed; */
+    }
+    
+    /* Hero section with background image */
+    #inicio {
+        background-image: linear-gradient(rgba(44, 44, 44, 0.7), rgba(255, 255, 255, 0.8)), url('../assets/images/background.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Custom styles for colors */
+    .text-title { color: var(--color-title); }
+    .text-subtitle { color: var(--color-subtitle); }
+    .text-body { color: var(--color-text); }
+    .icon-color { color: var(--color-icon); }
+    .btn-primary {
+        background-color: var(--color-title);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: var(--color-subtitle);
+        transform: translateY(-2px);
+    }
+    /* NEW: Button style for course details */
+    .btn-secondary {
+        background-color: transparent;
+        color: var(--color-title);
+        border: 2px solid var(--color-title);
+        transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+        background-color: var(--color-title);
+        color: white;
+        transform: translateY(-2px);
+    }
+    .course-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden; /* Added to contain the image */
+    }
+    .course-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 5px 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+    .specialized-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden; /* Added to contain the image */
+    }
+    .specialized-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    /* Animations for dynamic elements */
+    .animate-on-scroll {
+        opacity: 0;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in-up {
+        transform: translateY(30px);
+    }
+    .fade-in-left {
+        transform: translateX(-30px);
+    }
+    .fade-in-right {
+        transform: translateX(30px);
+    }
+    .visible {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+    
+    /* Underline animation for nav links */
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+    }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: var(--color-title);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
