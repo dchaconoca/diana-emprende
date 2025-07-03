@@ -40,37 +40,13 @@
             });
         }
     </script>
-    <script src="./src/scripts.js"></script>
+    <script src="./src/bannerBehavior.js"></script>
 
 </head>
 <body class="text-body antialiased">
 
     <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
-
-        <!-- Top Banner for Important Messages -->
-        <div id="announcement-banner" class="bg-gradient-to-r from-[var(--color-title)] to-[var(--color-subtitle)] text-white py-2 relative overflow-hidden">
-            <div class="container mx-auto px-6">
-                <div class="flex items-center justify-center space-x-8 text-sm font-medium">
-                    <div class="announcement-item flex items-center space-x-2">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span> Próximo curso "IA para el Mundo Real" - 22 de Julio 2025</span>
-                    </div>
-                    <div class="announcement-item hidden md:flex items-center space-x-2">
-                        <i class="fas fa-gift"></i>
-                        <span> Descuento especial para grupos de más de 15 participantes</span>
-                    </div>
-                    <div class="announcement-item hidden lg:flex items-center space-x-2">
-                        <i class="fas fa-users"></i>
-                        <span> Cupos limitados - ¡Reserva tu lugar ya!</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Close button -->
-            <button id="close-banner" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-200 transition-colors">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
 
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo Placeholder -->
@@ -101,6 +77,30 @@
                 <a href="#personalizacion" class="text-body hover:text-title">Personalización</a>
                 <a href="#contacto" class="text-body hover:text-title">Contacto</a>
             </nav>
+        </div>
+
+        <!-- Top Banner for Important Messages -->
+        <div id="announcement-banner" class="bg-gradient-to-r from-[var(--color-title)] to-[var(--color-subtitle)] text-white py-2 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-center space-x-8 text-sm font-medium">
+                    <div class="header-announcement-item item-animation flex items-center space-x-2">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Próximo curso "IA para el Mundo Real" - 22 de Julio 2025</span>
+                    </div>
+                    <div class="header-announcement-item item-animation hidden md:flex items-center space-x-2">
+                        <i class="fas fa-gift"></i>
+                        <span>Descuento para grupos de 15 participantes o más</span>
+                    </div>
+                    <div class="header-announcement-item item-animation hidden lg:flex items-center space-x-2">
+                        <i class="fas fa-users"></i>
+                        <span>Cupos limitados - ¡Reserva tu lugar ya!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Close button -->
+            <button id="close-banner" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-200 transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
 
     </header>   
@@ -298,20 +298,20 @@
     <!-- Footer -->
     <footer id="contacto" class="bg-gray-300 text-title font-semibold">
         <!-- Top Banner for Important Messages -->
-        <div id="announcement-banner" class="bg-gradient-to-r from-[var(--color-title)] to-[var(--color-subtitle)] text-white py-2 relative overflow-hidden">
+        <div id="footer-announcement-banner" class="bg-gradient-to-r from-[var(--color-title)] to-[var(--color-subtitle)] text-white py-2 relative overflow-hidden">
             <div class="container mx-auto px-6">
                 <div class="flex items-center justify-center space-x-8 text-sm font-medium">
-                    <div class="announcement-item flex items-center space-x-2">
+                    <div class="footer-announcement-item item-animation flex items-center space-x-2">
                         <i class="fas fa-calendar-alt"></i>
-                        <span> Próximo curso "IA para el Mundo Real" - 22 de Julio 2025</span>
+                        <span>Próximo curso "IA para el Mundo Real" - 22 de Julio 2025</span>
                     </div>
-                    <div class="announcement-item hidden md:flex items-center space-x-2">
+                    <div class="footer-announcement-item item-animation hidden md:flex items-center space-x-2">
                         <i class="fas fa-gift"></i>
-                        <span> Descuento especial para grupos de más de 15 participantes</span>
+                        <span>Descuento para grupos de 15 participantes o más</span>
                     </div>
-                    <div class="announcement-item hidden lg:flex items-center space-x-2">
+                    <div class="footer-announcement-item item-animation hidden lg:flex items-center space-x-2">
                         <i class="fas fa-users"></i>
-                        <span> Cupos limitados - ¡Reserva tu lugar ya!</span>
+                        <span>Cupos limitados - ¡Reserva tu lugar ya!</span>
                     </div>
                 </div>
             </div>

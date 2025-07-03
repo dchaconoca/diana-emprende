@@ -112,3 +112,27 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
+
+    /* --- Animación para el banner rotativo --- */
+
+    @keyframes aparecerYdesaparecer {
+    0% {
+        opacity: 0; /* Inicia invisible */
+    }
+    15% {
+        opacity: 1; /* A la mitad del tiempo, es totalmente visible */
+    }
+    75% {
+        opacity: 0.8; /* A la mitad del tiempo, es totalmente visible */
+    }
+    100% {
+        opacity: 0; /* Termina invisible para reiniciar el ciclo */
+    }
+    }
+
+    /* Paso 2: Aplica esa animación a tu elemento */
+    .item-animation {
+    animation: aparecerYdesaparecer 5s ease-in-out infinite;
+    }
+
+ 
