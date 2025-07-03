@@ -1,3 +1,14 @@
+    /* =============================================================================
+   ARCHIVO: script.js
+   DESCRIPCIÓN: Funcionalidades JavaScript del sitio web
+   AUTOR: Diana Chacón Ocariz
+   FECHA: 2025
+   ============================================================================= */
+
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    
+    
     // =========================================================================
     // BANNER FUNCTIONALITY
     // =========================================================================
@@ -62,3 +73,5 @@
     // Initial call and set up rotation
     startRotation();
     window.addEventListener('resize', startRotation);
+
+});
