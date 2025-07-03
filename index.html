@@ -76,7 +76,32 @@
                 <a href="#contacto" class="text-body hover:text-title">Contacto</a>
             </nav>
         </div>
-    </header>
+
+        <!-- Top Banner for Important Messages -->
+        <div id="announcement-banner" class="bg-gradient-to-r from-[var(--color-title)] to-[var(--color-subtitle)] text-white py-2 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-center space-x-8 text-sm font-medium">
+                    <div class="announcement-item flex items-center space-x-2">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span> Próximo curso "IA para el Mundo Real" - 22 de Julio 2025</span>
+                    </div>
+                    <div class="announcement-item hidden md:flex items-center space-x-2">
+                        <i class="fas fa-gift"></i>
+                        <span> Descuento especial para grupos de más de 15 participantes</span>
+                    </div>
+                    <div class="announcement-item hidden lg:flex items-center space-x-2">
+                        <i class="fas fa-users"></i>
+                        <span> Cupos limitados - ¡Reserva tu lugar ya!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Close button -->
+            <button id="close-banner" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-200 transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+    </header>   
 
     <main>
         <!-- Section 1: Hero -->
@@ -347,5 +372,6 @@
         const animatedElements = document.querySelectorAll('.animate-on-scroll');
         animatedElements.forEach(el => observer.observe(el));
     </script>
+    <script src="./src/scripts.js"></script>
 </body>
 </html>
