@@ -25,7 +25,7 @@
     
     /* Hero section with background image */
     #inicio {
-        background-image: linear-gradient(rgba(44, 44, 44, 0.7), rgba(255, 255, 255, 0.8)), url('../assets/images/background.jpeg');
+        background-image: linear-gradient(rgba(44, 44, 44, 0.7), rgba(255, 255, 255, 0.8)), url('../assets/images/diana3.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -78,13 +78,13 @@
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
     .fade-in-up {
-        transform: translateY(30px);
+        transform: translateY(40px);
     }
     .fade-in-left {
-        transform: translateX(-30px);
+        transform: translateX(-40px);
     }
     .fade-in-right {
-        transform: translateX(30px);
+        transform: translateX(40px);
     }
     .visible {
         opacity: 1;
