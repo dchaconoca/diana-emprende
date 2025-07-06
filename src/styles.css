@@ -22,7 +22,11 @@
         /* background-position: right;
         background-attachment: fixed; */
     }
-    
+
+    /* div {
+        border: 2px solid #747474;
+    }
+     */
     /* Hero section with background image */
     #inicio {
         background-image: linear-gradient(rgba(44, 44, 44, 0.7), rgba(255, 255, 255, 0.8)), url('../assets/images/diana3.jpg');
